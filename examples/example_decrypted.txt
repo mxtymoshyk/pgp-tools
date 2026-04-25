@@ -1,0 +1,14 @@
+This is a sample text file for testing PGP encryption with 3DES-CFB cipher.
+
+The quick brown fox jumps over the lazy dog.
+
+This file contains multiple lines and paragraphs to demonstrate that the 
+encryption and decryption process preserves the original formatting and content.
+
+Special characters test: !@#$%^&*()_+-=[]{}|;':",./<>?
+
+Numbers: 0123456789
+
+Unicode test: Hello 世界 🔐 🔑
+
+=== End of Example File ===

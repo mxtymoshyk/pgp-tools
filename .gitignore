@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+.codemie/
+
+# OS
+Thumbs.db
+
+# GnuPG keyrings & key material — never commit
+*.gpg
+*.asc
+*.kbx
+*.key
+secring.*
+pubring.*
+.gnupg/
+trustdb.gpg
+random_seed
+
+# Allow example fixtures (already encrypted, harmless)
+!examples/*.pgp
+!examples/*.txt
