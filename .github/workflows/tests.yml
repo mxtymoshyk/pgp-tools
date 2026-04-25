@@ -36,7 +36,11 @@ jobs:
 
       - name: Install GnuPG (Windows)
         if: runner.os == 'Windows'
-        run: choco install gnupg --no-progress -y
+        shell: pwsh
+        run: |
+          # Git for Windows is preinstalled on GitHub runners and ships gpg.exe
+          "C:\Program Files\Git\usr\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
+          & "C:\Program Files\Git\usr\bin\gpg.exe" --version
 
       - name: Install package
         run: |
